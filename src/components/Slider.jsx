@@ -2,8 +2,8 @@ import React from 'react';
 
 const Slider = ({ category, updateCategory }) => {
 
-    const categoriesList = ["Đệ Tử Quy", "Thập Thiện Nghiệp", "Giáo dục", "Âm nhạc", "Du lịch", "Làm đẹp", "Nấu ăn", "Thể dục", "Công nghệ", "Hài kịch", "Thời trang", "Vlogs", "Thể thao", "Làm tự thủ công", "Tin tức", "Hoạt hình", "Khoa học", "Nghệ thuật", "Động viên", "Giải trí"];
-    const categoriesValueList = ["detuquy", "thapthiennghiep", "giaoduc", "amnhac", "dulich", "lamdep", "nauan", "theduc", "congnghe", "haikich", "thoitrang", "vlogs", "thethao", "lamtucong", "tintuc", "hoathinh", "khoahoc", "nghethuat", "dongvien", "giaitri"];
+    const categoriesList = ["Tịnh Tông", "Đệ Tử Quy", "Thập Thiện Nghiệp", "Giáo dục", "Âm nhạc", "Du lịch", "Làm đẹp", "Nấu ăn", "Thể dục", "Công nghệ", "Hài kịch", "Thời trang", "Vlogs", "Thể thao", "Làm tự thủ công", "Tin tức", "Hoạt hình", "Khoa học", "Nghệ thuật", "Động viên", "Giải trí"];
+    const categoriesValueList = ["phatphapnhiemmau", "detuquy", "thapthiennghiep", "giaoduc", "amnhac", "dulich", "lamdep", "nauan", "theduc", "congnghe", "haikich", "thoitrang", "vlogs", "thethao", "lamtucong", "tintuc", "hoathinh", "khoahoc", "nghethuat", "dongvien", "giaitri"];
 
 
     // Function to update the category value

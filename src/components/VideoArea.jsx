@@ -14,6 +14,7 @@ import { CurrentUserContext } from '../context/CurrentUserContext';
  
 const VideoArea = ({ loading, videoData, nextVideoID }) => {
 
+    const seekStepInSeconds = 10;
     const [showMore, setShowMore] = useState(false);
     const [/* error, */ setError] = useState(false);
     const { currentUser, currentUserData } = useContext(CurrentUserContext);
@@ -122,7 +123,7 @@ const VideoArea = ({ loading, videoData, nextVideoID }) => {
 
                             {/* Youtube iframe */}
                             <div className="w-full h-64 sm:h-[45vh] md:h-[55vh] xl:h-[75vh] mb-3">
-                                <ReactPlayer url={`https://www.youtube.com/watch?v=${videoData?.videoId}`} width="100%" height="100%" controls={true} playing={true} pip={true} onEnded={playNextVideo} onError={handleVideoError}/>
+                                <ReactPlayer url={`https://www.youtube.com/watch?v=${videoData?.videoId}`} width="100%" height="100%" controls={true} playing={true} pip={true} onEnded={playNextVideo} onError={handleVideoError} seekStep={seekStepInSeconds}/>
                             </div>
 
                             {/* title */}
